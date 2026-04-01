@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <div className="relative min-h-162.5 flex items-center overflow-hidden mt-20 mb-20 sm:mt-15 md:mt-36 lg:mt-10">
 
-            {/* Container: Desktop padding original rakha hoyeche */}
+            {/* Container: Desktop padding [230px] ebong [250px] intact rakha hoyeche */}
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10 px-4 md:px-8 lg:px-12 xl:px-[230px] min-[1556px]:px-[250px] w-full">
 
                 {/* Left Content */}
@@ -52,12 +52,12 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* Right Image: Spacing fix for medium desktop */}
+                {/* Right Image: Height restore kora hoyeche (h-130) */}
                 <div className="relative flex justify-center lg:justify-end sm:mt-10 lg:mt-0">
                     <div className="relative">
                         <img
-                            /* Desktop height original (h-130), 1300-1555 range e overlap rukhte responsive h kora hoyeche */
-                            className="relative h-auto lg:h-[400px] min-[1300px]:max-[1555px]:h-[380px] min-[1556px]:h-130 w-full object-contain drop-shadow-2xl rounded-3xl animate-pulse"
+                            /* Apnar original desktop height h-130 fixed rakha hoyeche */
+                            className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
                             src={BannerImage}
                             alt="AI Models Banner"
                         /> 
