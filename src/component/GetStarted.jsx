@@ -20,7 +20,8 @@ const GetStarted = () => {
             {/* Cards Container */}
             <div className="max-w-[1200px] mx-auto py-10 lg:py-20"> 
                 
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
+                {/* md:grid-cols-2 add kora hoyeche jate tablet-e 2ti pashapashi thake */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                     
                     {/* Step 01 */}
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
@@ -66,11 +67,10 @@ const GetStarted = () => {
                         </div>
                     </div>
 
-                    {/* Step 03 - Tablet Logic: 
-                        md:col-span-2 lg:col-span-1 use korle 3rd card-ti tablet-e majhkhane thakbe 
-                    */}
+                    {/* Step 03 - Tablet Logic */}
+                    {/* md:col-span-2 use kora hoyeche jate tablet-e 3rd card-ti center-e thake */}
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
-        w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
+        w-full md:col-span-2 lg:col-span-1 md:max-w-[450px] lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
                         <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
                             03
