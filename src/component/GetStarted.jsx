@@ -6,8 +6,8 @@ import RocketImg from '../assets/rocket.png'
 const GetStarted = () => {
     return (
         <div className="mx-auto text-center px-4">
-            {/* Header Section: Responsive margin top */}
-            <div className="mt-12 md:mt-24 lg:mt-30"> 
+            {/* Header Section */}
+            <div className="mt-12 md:mt-20 lg:mt-30"> 
                 <h2 className="text-[30px] sm:text-[40px] lg:text-[48px] font-extrabold text-[#101727] mb-4 leading-tight">
                     Get Started in 3 Steps
                 </h2>
@@ -19,11 +19,12 @@ const GetStarted = () => {
 
             {/* Cards Container */}
             <div className="max-w-[1200px] mx-auto py-10 lg:py-20"> 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10 justify-items-center">
+                
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
                     
                     {/* Step 01 */}
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
-                        w-full max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
+        w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
                         <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
                             01
@@ -45,7 +46,7 @@ const GetStarted = () => {
 
                     {/* Step 02 */}
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
-                        w-full max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
+        w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
                         <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
                             02
@@ -65,9 +66,11 @@ const GetStarted = () => {
                         </div>
                     </div>
 
-                    {/* Step 03 */}
+                    {/* Step 03 - Tablet Logic: 
+                        md:col-span-2 lg:col-span-1 use korle 3rd card-ti tablet-e majhkhane thakbe 
+                    */}
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
-                        w-full max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
+        w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
                         <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
                             03

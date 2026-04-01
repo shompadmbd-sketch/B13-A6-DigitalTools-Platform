@@ -21,7 +21,7 @@ const Banner = () => {
                         </span>
                     </div>
 
-                    <h1 className="text-4xl lg:text-[72px] font-extrabold leading-[1.1666666666666667] text-[#101727]">
+                    <h1 className="text-4xl lg:text-[60px] font-extrabold leading-[1.1666666666666667] text-[#101727]">
                         Supercharge Your
                         <br className="block min-[1010px]:max-[1300px]:hidden" />
                         <span className="">
