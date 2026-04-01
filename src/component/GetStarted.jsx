@@ -27,7 +27,7 @@ const GetStarted = () => {
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
         w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
-                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
+                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 ">
                             01
                         </div>
                         
@@ -49,7 +49,7 @@ const GetStarted = () => {
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
         w-full md:max-w-full lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
-                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
+                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 ">
                             02
                         </div>
                         
@@ -71,7 +71,7 @@ const GetStarted = () => {
                     <div className="card bg-white border border-[#F1F1F1] rounded-2xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group 
         w-full md:col-span-2 lg:col-span-1 md:max-w-[450px] lg:max-w-[380px] lg:h-[380px] flex flex-col justify-center min-h-[340px] p-6 lg:p-0">
                         
-                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 border-white shadow-sm">
+                        <div className="absolute top-5 right-5 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full flex items-center justify-center font-bold text-[14px] z-10 border-4 ">
                             03
                         </div>
                         
