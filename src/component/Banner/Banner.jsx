@@ -1,77 +1,100 @@
 import React from 'react';
-import { FiShoppingCart } from "react-icons/fi";
+import BannerImage from '../../assets/banner.png';
+import CircleImg from '../../assets/circle.png';
+import PlayImg from '../../assets/play.png'
 
-
-const Navbar = ({ carts }) => {
+const Banner = () => {
     return (
- <div className="navbar bg-white border-b border-[#E5E7EB] px-4 md:px-8 lg:px-12 xl:px-50  xl:px- py-4 lg:py-6 relative z-[50]  mx-auto">
+ <div className="relative min-h-162.5 flex items-center overflow-hidden mt-20 mb-20 sm:mt-15 md:mt-36 lg:mt-10">
+
+      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
+
+        {/* Left Content */}
+
+        <div className="space-y-4  ">
+
+          <div className="inline-flex items-center gap-2 bg-[#E1E7FF] border border-[#E1E7FF] text-sm px-5 py-2 rounded-full">
+
+             <span><img src={CircleImg } alt="" /></span> 
+
+         <span className="font-medium text-4 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+
+           New: AI-Powered Tools Available
+
+         </span>
+
+           </div>
+
+          <h1 className="text-4xl lg:text-[72px] font-extrabold leading-[1.1666666666666667] text-[#101727]">
+
+            Supercharge Your
+
+            <br className="block min-[1010px]:max-[1300px]:hidden"/>
+            <span className="">
+              Digital Workflow
+
+            </span>
+
+          </h1>
+          <p className="text-[18px] text-[#627382] font-normal text-4 max-w-lg">
+
+            Access premium AI tools, design assets, templates, and productivity
+
+              software—all in one place. Start creating faster today.
+
+             Explore Products
+
+          </p>
+
+          <div className="flex flex-wrap gap-4 pt-4">
+
+          <button className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110 active:scale-95 transition-all px-8 py-3 rounded-full font-semibold text-lg shadow-xl shadow-[#7427F8]/40 flex items-center gap-3 group text-[#FFFFFF] cursor-pointer">
+        Explore Products
+      </button>  
+    <button className="relative p-[1px] rounded-full overflow-hidden transition-all shadow-xl shadow-[#7427F8]/40 group flex items-center justify-center cursor-pointer">
   
-  <div className="navbar-start">
-    {/* Hamburger Menu - Mobile & Tablet */}
-    <div className="dropdown lg:hidden">
-      <div tabIndex={0} role="button" className="btn btn-ghost p-0 mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </div>
-      
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[100] p-5 shadow-2xl bg-white rounded-xl w-64 border border-gray-100 font-semibold text-[#101727]">
-        <li><a>Products</a></li>
-        <li><a>Features</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Testimonials</a></li>
-        <li><a>FAQ</a></li>
-      </ul>
-    </div>
+  {/* গ্রাডিয়েন্ট লেয়ার (এটিই বর্ডার হিসেবে কাজ করবে) */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"></div>
 
-    {/* Logo */}
-    <div className="flex items-center">
-      <img 
-        className="w-28 md:w-32 lg:w-36 h-9 lg:h-10 object-contain" 
-        src="/logo.png" 
-        alt="DigiTools Logo" 
-      />
-    </div>
-  </div>
-
-  {/* Desktop Menu - Center */}
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal gap-6 xl:gap-8 px-1 text-[15px] lg:text-[16px] font-semibold text-[#101727]">
-      <li><a className="hover:text-[#4F39F6] transition-colors p-0">Products</a></li>
-      <li><a className="hover:text-[#4F39F6] transition-colors p-0">Features</a></li>
-      <li><a className="hover:text-[#4F39F6] transition-colors p-0">Pricing</a></li>
-      <li><a className="hover:text-[#4F39F6] transition-colors p-0">Testimonials</a></li>
-      <li><a className="hover:text-[#4F39F6] transition-colors p-0">FAQ</a></li>
-    </ul>
-  </div>
-
-  {/* Right Side - Login & Get Started */}
-  <div className="navbar-end gap-3 md:gap-4 lg:gap-6 items-center">
-    <button className="flex items-center gap-1.5 text-[15px] md:text-[16px] font-semibold text-[#101727] hover:text-[#4F39F6] transition-colors">
-  
-  {/* Cart Icon wrapper with relative positioning */}
-  <div className="relative">
-    <FiShoppingCart className="text-2xl" />
+  {/* ভেতরের সাদা অংশ */}
+  <div className="relative bg-white px-8 py-3 rounded-full flex items-center gap-3 w-full h-full group-hover:bg-transparent transition-all">
     
-   
-    {carts.length > 0 && (
-      <span className="absolute -top-2 -right-2 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white text-[12px] font-semibold w-5 h-5 rounded-full flex items-center justify-center">
-      {carts.length}
-     </span>
-    )}
+    <span><img src={PlayImg} alt="Play" /></span>
+    
+    <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold text-lg group-hover:text-white">
+      Watch Demo
+    </span>
+    
   </div>
-
-  <span className="hidden sm:inline ml-1">Login</span>
 </button>
-    
-    <a className="btn bg-gradient-to-r from-blue-600 to-purple-600 border-none rounded-full text-white px-5 lg:px-8 min-h-0 h-10 lg:h-12 normal-case font-semibold text-sm lg:text-base">
-      Get Started
-    </a>
-  </div>
-</div>
 
+          </div>
+        </div>
 
+        {/* Right Image */}
+
+        <div className="relative flex justify-center lg:justify-end  sm:mt-10 lg:mt-0">
+
+          <div className="relative">
+
+            <img
+
+              className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
+
+              src={BannerImage}
+
+              alt="AI Models Banner"
+
+            /> 
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div> 
     );
 };
 
-export default Navbar;
+export default Banner;
