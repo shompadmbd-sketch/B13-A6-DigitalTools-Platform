@@ -8,7 +8,7 @@ const GetStarted = () => {
         <div className="mx-0 text-center ">
            <div className="mt-10 lg:mt-30"> 
     
-    {/* মোবাইলে ছোট ফন্ট (text-[32px]), বড় স্ক্রিনে (sm/lg) বড় ফন্ট */}
+  
     <h2 className="text-[32px] sm:text-[48px] font-extrabold text-[#101727] mb-4">
       Get Started in 3 Steps
     </h2>
