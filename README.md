@@ -1,16 +1,20 @@
-# React + Vite
+# Project Name: Digitools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean digital product storefront website where users can explore various tools and manage their shopping cart easily.
 
-Currently, two official plugins are available:
+## 📝 Description
+Digitools is a React-based web application designed to show digital products like templates and software. The project follows a specific Figma design and focuses on showing product details dynamically. Users can switch between the product list and the cart, add items to their selection, and see real-time updates in the navbar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology Used
+* **React.js**: For building the website components.
+* **Tailwind CSS & DaisyUI**: For styling and making it look professional.
+* **JavaScript (ES6+)**: For the cart logic and data handling.
+* **React-Toastify**: To show alerts when adding or removing products.
+* **JSON**: Used to store and load product information.
 
-## React Compiler
+## ✨ 3 Features about my project
+1. **Dynamic Cart & Navbar Count**: When a user clicks "Buy Now," the product is added to the cart, and the total count in the navbar increases automatically.
+2. **Product & Cart Toggle**: I have implemented two buttons that allow users to toggle between the Product section and the Cart section easily. Also, the **Proceed to Checkout** button will remove all the products from the cart and reset it.
+3. **Interactive Notifications**: Using React-Toastify, the app shows "Added to cart," "Removed," and "Checkout Success" messages to give a better experience to the user.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
