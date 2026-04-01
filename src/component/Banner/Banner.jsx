@@ -5,14 +5,11 @@ import PlayImg from '../../assets/play.png'
 
 const Banner = () => {
     return (
-        
         <div className="relative min-h-162.5 flex items-center overflow-hidden mt-20 mb-20 sm:mt-15 md:mt-36 lg:mt-10">
 
-           
-            <div className="mx-auto flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-center relative z-10 px-4 md:px-8 lg:px-12 xl:px-[230px]">
+            <div className="mx-auto flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 items-center relative z-10 px-4 md:px-8 lg:px-12 xl:px-[100px] min-[1556px]:px-[250px] w-full max-w-[1920px]">
 
-                {/* Left Content */}
-                <div className="space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <div className="space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
 
                     <div className="inline-flex items-center gap-2 bg-[#E1E7FF] border border-[#E1E7FF] text-sm px-5 py-2 rounded-full">
                         <span><img src={CircleImg} alt="" /></span>
@@ -21,15 +18,15 @@ const Banner = () => {
                         </span>
                     </div>
 
-                    <h1 className="text-4xl lg:text-[60px] font-extrabold leading-[1.1666666666666667] text-[#101727]">
+                    <h1 className="text-4xl lg:text-[60px] min-[1300px]:max-[1555px]:text-[52px] min-[1556px]:text-[40px] font-extrabold leading-[1.1] text-[#101727]">
                         Supercharge Your
-                        <br className="block min-[1010px]:max-[1300px]:hidden" />
+                        <br className="block lg:hidden" />
                         <span className="">
-                            Digital Workflow
+                            {" "}Digital Workflow
                         </span>
                     </h1>
                     
-                    <p className="text-[18px] text-[#627382] font-normal text-4 max-w-lg">
+                    <p className="text-[18px] text-[#627382] font-normal max-w-lg">
                         Access premium AI tools, design assets, templates, and productivity
                         software—all in one place. Start creating faster today.
                     </p>
@@ -51,11 +48,11 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* Right Image */}
-                <div className="relative flex justify-center lg:justify-end sm:mt-10 lg:mt-0">
-                    <div className="relative w-full max-w-[500px] lg:max-w-none">
+                
+                <div className="relative flex justify-center lg:justify-end w-full lg:mt-[-40px] pb-10 lg:pb-0">
+                    <div className="relative w-full max-w-[650px] lg:max-w-none flex justify-center lg:justify-end">
                         <img
-                            className="relative h-auto lg:h-130 w-full object-contain drop-shadow-2xl rounded-3xl animate-pulse"
+                            className="relative h-auto lg:h-[450px] xl:h-[500px] min-[1556px]:h-130 w-full lg:w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
                             src={BannerImage}
                             alt="AI Models Banner"
                         />

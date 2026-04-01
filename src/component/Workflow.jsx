@@ -15,8 +15,7 @@ const Workflow = () => {
                     </p>
                 </div>
 
-                {/* Buttons Container */}
-                {/* Mobile-e button gulo stacked thakbe, sm screen theke pashapashi hobe */}
+              
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-10 md:pt-12">
                     
                     <button className="w-full sm:w-auto bg-white hover:scale-105 active:scale-95 transition-all px-10 py-4 rounded-full font-bold shadow-xl text-[16px] cursor-pointer">
@@ -31,7 +30,7 @@ const Workflow = () => {
 
                 </div>
 
-                {/* Footer Info */}
+               
                 <div className="mt-8 md:mt-10">
                     <p className="text-white/80 text-[13px] sm:text-[14px] md:text-[16px] font-medium tracking-wide">
                         14-day free trial <span className="mx-1 opacity-50">•</span> No credit card required <span className="mx-1 opacity-50">•</span> Cancel anytime
