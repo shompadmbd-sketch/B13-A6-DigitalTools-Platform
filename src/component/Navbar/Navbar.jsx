@@ -31,7 +31,7 @@ const Navbar = ({ carts = [] }) => {
           </div>
 
           {/* Logo */}
-          <div className="flex items-center ml-6">
+          <div className="flex items-center ml-4">
             <img 
               className="w-28 md:w-32 lg:w-36 h-9 lg:h-10 object-contain" 
               src="/logo.png" 
