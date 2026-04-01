@@ -14,14 +14,13 @@ const Pricing = () => {
             </div>
 
             {/* Pricing Cards Container */}
-            <div className="container mx-auto px-4 sm:px-6 mt-10 lg:mt-20"> 
-                {/* md:grid-cols-2 add kora hoyeche jate tablet-e 2ti card pashapashi thake.
-                    lg:grid-cols-3 desktop view-te 3ti card pashapashi thakbe.
-                */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-stretch max-w-[1200px] mx-auto">
+            <div className="container mx-auto px-4 sm:px-6 mt-16 lg:mt-24"> 
+               
+              
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-[1200px] mx-auto">
 
                     {/* Starter Plan */}
-                    <div className="w-full bg-[#F2F2F2] border border-[#EDEDED] shadow-sm rounded-[24px] flex flex-col p-8 md:p-10 text-left transition-transform hover:scale-[1.02]">
+                    <div className="flex flex-col h-full bg-[#F2F2F2] border border-[#EDEDED] shadow-sm rounded-[24px] p-8 md:p-10 text-left transition-transform hover:scale-[1.02]">
                         <div className="mb-4">
                             <h2 className="text-[24px] font-bold text-[#101727] mb-1">Starter</h2>
                             <p className="text-[#627382] text-base font-normal">Perfect for getting started</p>
@@ -33,6 +32,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         
+                        {/* flex-grow list-কে বলবে বাকি খালি জায়গা দখল করতে, ফলে বাটন নিচে থাকবে */}
                         <ul className="space-y-4 mb-10 text-[#627382] flex-grow">
                             {["Access to 10 free tools", "Basic templates", "Community support", "1 project per month"].map((feature, index) => (
                                 <li key={index} className="flex items-start gap-2">
@@ -44,13 +44,13 @@ const Pricing = () => {
                             ))}
                         </ul>
                         
-                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110 transition-all mt-auto cursor-pointer shadow-md active:scale-95">
+                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110 transition-all cursor-pointer shadow-md active:scale-95">
                             Get Started Free
                         </button>
                     </div>
 
                     {/* Pro Plan (Highlighted) */}
-                    <div className="w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border border-[#8B3DFF] shadow-xl rounded-[24px] flex flex-col p-8 md:p-10 text-left relative lg:-mt-6 lg:mb-6 transition-transform hover:scale-[1.02]">
+                    <div className="relative flex flex-col h-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border border-[#8B3DFF] shadow-xl rounded-[24px] p-8 md:p-10 text-left transition-transform hover:scale-[1.05] z-10">
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
                             <span className="bg-[#FEF3C6] text-[#BB4D00] px-5 py-2 rounded-full text-sm font-bold shadow-md whitespace-nowrap">
                                 Most Popular
@@ -78,7 +78,7 @@ const Pricing = () => {
                             ))}
                         </ul>
                         
-                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg bg-white hover:bg-gray-50 transition-all mt-auto cursor-pointer border border-gray-100 shadow-sm active:scale-95">
+                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg bg-white hover:bg-gray-50 transition-all cursor-pointer border border-gray-100 shadow-sm active:scale-95">
                             <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                                 Start Pro Trial
                             </span>
@@ -86,8 +86,7 @@ const Pricing = () => {
                     </div>
 
                     {/* Enterprise Plan */}
-                    {/* md:col-span-2 lg:col-span-1 use kora hoyeche jate tablet-e eita puro width nite pare ba align thake */}
-                    <div className="w-full bg-[#F2F2F2] border border-[#EDEDED] shadow-sm rounded-[24px] flex flex-col p-8 md:p-10 text-left md:col-span-2 lg:col-span-1 transition-transform hover:scale-[1.02]">
+                    <div className="flex flex-col h-full bg-[#F2F2F2] border border-[#EDEDED] shadow-sm rounded-[24px] p-8 md:p-10 text-left transition-transform hover:scale-[1.02]">
                         <div className="mb-4">
                             <h2 className="text-[24px] font-bold text-[#101727] mb-1">Enterprise</h2>
                             <p className="text-[#627382] text-base font-normal">For teams and businesses</p>
@@ -110,11 +109,10 @@ const Pricing = () => {
                             ))}
                         </ul>
                         
-                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110 transition-all mt-auto cursor-pointer shadow-md active:scale-95">
+                        <button className="w-full py-4 px-6 rounded-full font-bold text-lg text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110 transition-all cursor-pointer shadow-md active:scale-95">
                             Contact Sales
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
