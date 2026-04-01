@@ -10,10 +10,10 @@ const Footer = () => {
    <footer className="bg-[#101727] border-t border-white/10 pt-16 pb-10">
   <div className="max-w-7xl mx-auto px-6">
     
-    {/* grid-cols-2 সরাসরি দেওয়ার ফলে মোবাইলেই ২ কলাম হবে */}
+    
     <div className="grid grid-cols-2 md:grid-cols-12 gap-8">
       
-      {/* ১. লোগো ও ডেসক্রিপশন - মোবাইলেও ২ কলাম জুড়ে থাকবে (পুরো উইডথ) */}
+      
       <div className="col-span-2 md:col-span-4">
         <div className="mb-6">
           <img className="w-32 lg:w-40 h-auto object-contain" src="/footerlogo.png" alt="Logo" />
@@ -23,7 +23,7 @@ const Footer = () => {
         </p>
       </div>
 
-      {/* ২. প্রোডাক্ট - মোবাইলে ১ কলাম দখল করবে (অর্থাৎ বাম পাশে থাকবে) */}
+     
       <div className="col-span-1 md:col-span-2">
         <h3 className="text-white font-semibold mb-6 text-lg">Product</h3>
         <ul className="space-y-4 text-gray-400 text-sm">
@@ -34,7 +34,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* ৩. কোম্পানি - মোবাইলে ১ কলাম দখল করবে (অর্থাৎ ডান পাশে থাকবে) */}
+     
       <div className="col-span-1 md:col-span-2">
         <h3 className="text-white font-semibold mb-6 text-lg">Company</h3>
         <ul className="space-y-4 text-gray-400 text-sm">
@@ -45,7 +45,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* ৪. লিগ্যাল */}
+     
       <div className="col-span-1 md:col-span-2">
         <h3 className="text-white font-semibold mb-6 text-lg">Legal</h3>
         <ul className="space-y-4 text-gray-400 text-sm">
@@ -55,7 +55,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* ৫. সোশ্যাল লিংক */}
+      
       <div className="col-span-1 md:col-span-2">
         <h3 className="text-white font-semibold mb-6 text-lg">Social Links</h3>
         <ul className="flex flex-wrap gap-3">

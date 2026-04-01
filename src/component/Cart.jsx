@@ -16,11 +16,8 @@ const Cart = ({ carts, setCarts }) => {
   };
 
   return (
-    /* 1. w-full: Mobile-e puru width nibe।
-       2. max-w-[1200px]: Desktop-e 1200px er beshi boro hobe na।
-       3. p-6 md:p-12: Mobile-e padding kom, desktop-e beshi।
-    */
-    <div className="w-full max-w-[1200px] mx-auto bg-[#F2F2F2] rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 p-6 md:p-12 flex flex-col justify-between min-h-[400px]">
+    
+    <div className="w-full max-w-[1200px] mx-auto bg-[#F2F2F2] rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 p-6 md:p-12 flex flex-col justify-between min-h-[400px] mt-10">
       
       {/* Header Section */}
       <div>
@@ -70,7 +67,7 @@ const Cart = ({ carts, setCarts }) => {
         )}
       </div>
 
-      {/* Footer / Total Section */}
+      
       {carts.length > 0 && (
         <div className="mt-8 md:mt-auto">
           <div className="flex justify-between items-center mb-6 px-1">
