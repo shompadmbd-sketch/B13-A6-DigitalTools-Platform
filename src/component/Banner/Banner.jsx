@@ -7,10 +7,10 @@ const Banner = () => {
     return (
         <div className="relative min-h-162.5 flex items-center overflow-hidden mt-20 mb-20 sm:mt-15 md:mt-36 lg:mt-10">
 
-            {/* Container: Desktop padding [230px] ebong [250px] intact rakha hoyeche */}
+            
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10 px-4 md:px-8 lg:px-12 xl:px-[230px] min-[1556px]:px-[250px] w-full">
 
-                {/* Left Content */}
+           
                 <div className="space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
 
                     <div className="inline-flex items-center gap-2 bg-[#E1E7FF] border border-[#E1E7FF] text-sm px-5 py-2 rounded-full">
@@ -23,7 +23,7 @@ const Banner = () => {
                     <h1 className="text-4xl lg:text-[60px] font-extrabold leading-[1.1666666666666667] text-[#101727]">
                         Supercharge Your
                         
-                        {/* Br Logic: Tablet/Mobile e 2 line hobe, Desktop (1010px+) e ek line thakbe */}
+                        
                         <br className="block min-[1010px]:hidden" />
                         <span className="">
                             {" "}Digital Workflow
@@ -52,11 +52,11 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* Right Image: Height restore kora hoyeche (h-130) */}
+                
                 <div className="relative flex justify-center lg:justify-end sm:mt-10 lg:mt-0">
                     <div className="relative">
                         <img
-                            /* Apnar original desktop height h-130 fixed rakha hoyeche */
+                            
                             className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
                             src={BannerImage}
                             alt="AI Models Banner"

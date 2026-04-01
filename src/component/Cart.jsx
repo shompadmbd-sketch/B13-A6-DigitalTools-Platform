@@ -29,7 +29,7 @@ const Cart = ({ carts, setCarts }) => {
             <p className="text-xl md:text-2xl p-5 text-gray-400">Cart is empty</p>
           </div>
         ) : (
-          /* custom-scrollbar overflow handle korbe */
+         
           <div className="space-y-4 max-h-[300px] md:max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
             {carts.map((item) => (
               <div

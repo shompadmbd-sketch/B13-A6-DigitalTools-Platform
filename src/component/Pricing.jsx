@@ -32,7 +32,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         
-                        {/* flex-grow list-কে বলবে বাকি খালি জায়গা দখল করতে, ফলে বাটন নিচে থাকবে */}
+                      
                         <ul className="space-y-4 mb-10 text-[#627382] flex-grow">
                             {["Access to 10 free tools", "Basic templates", "Community support", "1 project per month"].map((feature, index) => (
                                 <li key={index} className="flex items-start gap-2">
